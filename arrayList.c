@@ -48,7 +48,7 @@ int insertArrayList(arrayList* al,
 		return 0;
 	}
 
-	// Full상태면 용량을 2배 증가
+	// Full상태면 용량을 2배 증가시킴
 	if (isFullArrayList(al)) {
 		int newCapacity = al->capacity * 2;
 		elementArrayList* newData = (elementArrayList*)realloc(al->data, sizeof(elementArrayList) * newCapacity); 
